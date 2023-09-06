@@ -2231,6 +2231,12 @@
       "config_flow": true,
       "iot_class": "cloud_polling"
     },
+    "growcube": {
+      "name": "GrowCube",
+      "integration_type": "hub",
+      "config_flow": true,
+      "iot_class": "local_polling"
+    },
     "gstreamer": {
       "name": "GStreamer",
       "integration_type": "hub",

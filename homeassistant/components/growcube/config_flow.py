@@ -18,7 +18,7 @@ _LOGGER = logging.getLogger(__name__)
 
 STEP_USER_DATA_SCHEMA = vol.Schema(
     {
-        vol.Required("host", description="IP address of the GrowCube"): str,
+        vol.Required("ip", description="IP address of the GrowCube"): str,
     }
 )
 
@@ -34,7 +34,9 @@ async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str,
     """
 
     try:
-        status = await hass.async_add_executor_job(pygrowcube.get_status, data["host"])
+        status = await hass.async_add_executor_job(
+            pygrowcube.get_status, data["ip"], 5, False
+        )
     except Exception as ex:
         _LOGGER.error("Exception while validating growcube host")
         _LOGGER.exception(ex)

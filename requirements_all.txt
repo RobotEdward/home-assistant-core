@@ -1719,7 +1719,7 @@ pyfttt==0.3
 pygatt[GATTTOOL]==4.0.5
 
 # homeassistant.components.growcube
-pygrowcube==0.1.2
+pygrowcube==0.1.4
 
 # homeassistant.components.gtfs
 pygtfs==0.1.9

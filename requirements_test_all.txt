@@ -1271,7 +1271,7 @@ pyfritzhome==0.6.9
 pyfttt==0.3
 
 # homeassistant.components.growcube
-pygrowcube==0.1.4
+pygrowcube==0.2.0
 
 # homeassistant.components.hvv_departures
 pygti==0.9.4
